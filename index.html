@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favpng-150x150.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+
+    <title>Shore360</title>
+</head>
+<body>
+    <div id="returnToTop-container">
+        <a id="returnToTopBtn"><i class="fas fa-arrow-to-top"></i></a>
+    </div>
+
+    <div class="header" id="home">
+        <nav class="navbar wrapper">
+            <div class="brand-title">
+                <img src="/assets/logo.png" />
+            </div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+    <section class="content">
+        <div class="wrapper">
+            <div class="slider-container">
+                <ul class="slider">
+                    <li>
+                        <img src="/assets/1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/assets/6.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <button class="btn" id="generateBtn"> Load More</button>
+                <div id="catsImgDiv"></div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="myHr">
+
+    <section class="content" id="about">
+        <div class="wrapper">
+            <div class="row">
+                <div class="content--title"><h2>ABOUT</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="/assets/content.png" alt="">
+                </div>
+                <div class="col-2">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A maiores nihil ab sint iure, earum molestias similique, minima architecto quod iusto, nemo repellendus? Assumenda in nihil doloribus ipsam molestiae odio!</p>
+                    <button class="btn">Enroll Now!</button>
+                </div>
+            </div>
+
+            <hr class="myHr">
+
+            <div class="row row-reverse">
+                <div class="col-2">
+                    <img src="/assets/content.png" alt="">
+                </div>
+                <div class="col-2">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A maiores nihil ab sint iure, earum molestias similique, minima architecto quod iusto, nemo repellendus? Assumenda in nihil doloribus ipsam molestiae odio!</p>
+                    <button class="btn">Register Now!</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="myHr">
+
+    <section class="content" id="contact">
+        <div class="wrapper">
+            <div class="row">
+                <div class="content--title"><h2>CONTACT</h2></div>
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name here..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name here..">
+                    
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" placeholder="Your e-mail here..">
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input class="btn" type="submit" value="Submit">
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="row-mobile">
+                <img src="/assets/logo.png" alt="">
+                <div class="footer--icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-desktop">
+                    <img src="/assets/logo.png" alt="">
+                    <div class="footer--icons">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="col footer--links">
+                    <div class="col-title">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer--links">
+                    <div class="col-title">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer--links">
+                    <div class="col-title">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center visibility-5">
+                <small>Lorem Ipsum. All Rights Reserved &#169;</small>
+            </div>  
+        </div>
+              
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    
+</body>
+</html>

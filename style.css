@@ -391,6 +391,7 @@ body {
   }
   .footer .wrapper .row {
     font-size: 80%;
+    margin-bottom: 10px;
   }
   .footer .wrapper .row .col {
     width: 100%;
@@ -406,6 +407,7 @@ body {
   }
   .row-mobile {
     display: block;
+    margin-bottom: 10px;
   }
   .col-desktop {
     display: none;

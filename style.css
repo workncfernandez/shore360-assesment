@@ -199,10 +199,6 @@ body {
   padding: 10px;
 }
 
-.content .wrapper .slider img {
-  width: 100%;
-}
-
 .content .wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +361,10 @@ body {
   }
   .left_arrow, .right_arrow {
     top: 40%;
+  }
+  .btn {
+    width: 95%;
+    padding: 15px;
   }
   .content .wrapper .row {
     display: -webkit-box;

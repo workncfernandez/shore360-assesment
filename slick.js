@@ -1,6 +1,6 @@
 // slick slider
 $('.slider').slick({
-    infinite: false,
+    infinite: true,
     speed: 300,
     prevArrow: '<i class="fas fa-chevron-left left_arrow">',
     nextArrow: '<i class="fas fa-chevron-right right_arrow">',
@@ -12,7 +12,7 @@ $('.slider').slick({
         settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: false,
+            infinite: true,
         }
         },
         {
@@ -20,7 +20,7 @@ $('.slider').slick({
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false
+            infinite: true
         }
         }
     ]

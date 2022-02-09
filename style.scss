@@ -48,8 +48,8 @@ ul li{
 }
 
 .addedSlick{
-    max-width: 373px;
-    height: 110px;
+    max-width: 374px;
+    height: 267px !important;
     max-height: 267px;
     object-fit: fill;
     
@@ -404,4 +404,12 @@ body {
     }
     
 
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .addedSlick{
+        max-width: 457px !important;
+        height: 289px !important;
+        max-height: 289px !important;
+    }
 }

@@ -1,3 +1,4 @@
+// slick slider
 $('.slider').slick({
     infinite: false,
     speed: 300,
@@ -22,30 +23,30 @@ $('.slider').slick({
             infinite: false
         }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 
-const generateBtn = document.getElementById('generateBtn');
-
-generateBtn.addEventListener('click', () => {
+// fetch images from Cat Api and add it to slider
+const fetchImages = () =>{
   fetch('https://api.thecatapi.com/v1/images/search')
-  .then(response => response.json())
-  .then((data) => {
-    let catsImgUrl = data[0].url
+    .then(response => response.json())
+    .then((data) => {
+      let catsImgUrl = data[0].url
+  
+      let catsImgEl = document.createElement('img')
+      catsImgEl.setAttribute('src', `${catsImgUrl}`)
+      catsImgEl.setAttribute('class', 'addedSlick')
+   
+      $('.slider').slick('slickAdd', catsImgEl);
+  
+    })
+    .catch(err => console.log(err))
+  }
 
-    let catsImgEl = document.createElement('img')
-    catsImgEl.setAttribute('src', `${catsImgUrl}`)
-    catsImgEl.setAttribute('class', 'addedSlick')
+const generateBtn = document.getElementById('generateBtn');
+generateBtn.addEventListener('click', fetchImages);
 
-    console.log(catsImgEl);
-
-    $('.slider').slick('slickAdd', catsImgEl);
-
-  })
-  .catch(err => console.log(err))
-})
-
-// min-width: 367px; max-width: 367px; min-height: 262px; max-height: 262px;
+// Generate six default images for slider
+for (let index = 0; index < 6; index++) {
+  fetchImages();
+}
